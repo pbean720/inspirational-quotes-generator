@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('Beige Brown Minimalist Quote Instagram Story (crop).png'); /*1*/
+
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; /* cover the whole page even if some parts of the image get expanded or cut off */
+    height: 100%; 
+    width: 100%;
+}
+
+/* LINES FOR BG 1 AND BG 5 */
+.topLine {
+    color: white;
+    border-top: 2px solid;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}
+
+.bottomLine {
+    color: white;
+    border-top: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+}
+
+.leftLine {
+    color: white;
+    height: 100%;
+    position: absolute;
+    border-left: 2px solid; /* wont work if you just say border, it has to be border-left */
+    left: 10%;
+}
+
+.rightLine {
+    border-left: 2px solid;
+    color: white;
+    height: 100%; /* this doesnt work unless you make the position absolute */
+    position: absolute;
+    right: 10%;
+}
+
+/* CENTERING QUOTE TEXT TO THE MIDDLE OF THE PAGE */
+
+.quoteContainer { /* a div that is the child to the body element. its made to be the same size as the body element so that its child can be centered in the middle of it/the middle o the body without disrupting the lines in bg 1 and bg 5*/
+    position: absolute; /* none of quote containers child elements will disrupt the elements in body (the lines) */
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* <-- this isn't needed so long as the child elements are using the left and right css properties to center themselves on the x-axis. If the child element used the top and bottom to center themselves on the y-axis, the align-items: center element wouldn't be needed either*/
+    
+
+}
+.quoteTxt{
+    position: relative; /* relative instead of absolute so that the h1, author, and button elements dont overlap when the screen is smaller */
+}
+
+
+.quote {
+    font-family: 'Noto Serif Display', serif;
+
+    /* any fonts you couldn't find, just make them arial */
+    color: white;
+    font-size: 2rem; /* broswer default font size = 1rem = 16px*/
+    text-align: center;
+    /* change font to be regular instead of light and figure how to make the size of the font responsive */
+}
+
+/* "320px — 480px: Mobile devices. 481px — 768px: iPads, Tablets. 769px — 1024px: Small screens, laptops. 1025px — 1200px: Desktops, large screens" - freecodecamp.org */
+
+h1 {
+    position: relative;
+}
+
+.author {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+
+    position: relative; 
+}
+
+.btns {
+    position: relative;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* background-image: url('pexels-pixabay-267151.jpg'); Photo by Pixabay: https://www.pexels.com/photo/sun-rays-through-the-clouds-267151/ */ /*6*/
+    /* background-color: #eee8db; */ /*5*/
+    /* background-image: url('Peach Watercolour Painting Motivational Quote Instagram Story.png'); */ /*2*/
+    /* background-image: url('3.png'); */
+    /* background-image: url('4.png');  */
+
+
+
+
+    /* font-family: 'Cardo', serif; */
+    /* background 3's author font */
+    /* font-family: 'Lato', sans-serif;  */
+    /* background 1's author font */
+    /* font-family: 'Fraunces', serif; */
+    /* background 2's quote font - Thin */
+    /* background 1's quote font - Light */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    /* background 6's quote font */
+    /* font-family: 'Cormorant Garamond', serif; */
+    /* background 4's quote and author font - Italic ofr quote, Just bold for author */
+    /* font-family: 'Tangerine', cursive; */
+    /* i forgot */
+
+
+
+
+
+
+

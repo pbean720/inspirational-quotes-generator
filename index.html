@@ -3,112 +3,16 @@
     <head>
         <title>Inspirational Quotes</title>
         <meta charset="utf-8">
-        <!-- <link href="style.css" rel="stylesheet"> -->
+        <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:ital@1&family=Fraunces:ital,opsz,wght@0,9..144,100;1,9..144,100&family=Lato&family=Noto+Serif+Display:ital,wght@1,300&family=Open+Sans&family=Playfair+Display&family=Tangerine&display=swap" rel="stylesheet">
-
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            body {
-                background-image: url('Beige Brown Minimalist Quote Instagram Story (crop).png'); /*1*/
-                /* background-image: url('pexels-pixabay-267151.jpg'); Photo by Pixabay: https://www.pexels.com/photo/sun-rays-through-the-clouds-267151/ */ /*6*/
-                /* background-color: #eee8db; */ /*5*/
-                /* background-image: url('Peach Watercolour Painting Motivational Quote Instagram Story.png'); */ /*2*/
-                /* background-image: url('3.png'); */
-                /* background-image: url('4.png');  */
-                background-repeat: no-repeat; /* if the background is stretched to be longer than the img, the img, will not repeat itself */
-                background-attachment: fixed; 
-                background-size: cover;
-                height: 100%; 
-                width: 100%;
-            }
-                /* create the 4 lines */
-                /* &  */
-                /* create the 2 lines */
-            .topLine {
-                height: 2px;
-                position: absolute;
-                width: 100%;
-                top: 10%;
-            }
-
-            .bottomLine {
-                height: 2px;
-                position: absolute;
-                width: 100%;
-                bottom: 10%;
-            }
-
-            .leftLine {
-                color: white;
-                height: 100%;
-                position: absolute;
-                border-left: 2px solid; /* wont work if you just say border, it has to be border-left */
-                left: 10%;
-            }
-
-            .rightLine {
-                border-left: 2px solid;
-                color: white;
-                height: 100%; /* this doesnt work unless you make the position absolute */
-                position: absolute;
-                right: 10%;
-            }
-
-            /* centering the text to the middle of the page */
-
-            .quoteContainer {
-                position: absolute;
-                height: 100%;
-                width: 100%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-
-            }
-            .quoteTxt {
-                position: absolute;
-                left: 25%;
-                right: 25%;
-            }
-
-            .quote {
-                /* font-family: 'Cardo', serif; */
-                /* background 3's author font */
-                /* font-family: 'Lato', sans-serif;  */
-                /* background 1's author font */
-                /* font-family: 'Fraunces', serif; */
-                /* background 2's quote font - Thin */
-                font-family: 'Noto Serif Display', serif;
-                /* background 1's quote font - Light */
-                /* font-family: 'Open Sans', sans-serif; */
-                /* font-family: 'Playfair Display', serif; */
-                /* background 6's quote font */
-                /* font-family: 'Cormorant Garamond', serif; */
-                /* background 4's quote and author font - Italic ofr quote, Just bold for author */
-                /* font-family: 'Tangerine', cursive; */
-                /* i forgot */
-
-                /* any fonts you couldn't find, just make them arial */
-                color: white;
-                font-size: 180%;
-                text-align: center;
-
-                /* change font to be regular instead of light and figure how to make the size of the font responsive */
-            }
-        </style>
     </head>
 
     <body>
 
             <span class="leftLine"></span>
-            <hr class="topLine">
+            <span class="topLine"></span>
 
             <div class="quoteContainer">
                 <h1>Motivational Quotes</h1>
@@ -124,15 +28,20 @@
                         Lies on his lips, I lick it
                         UNIQUE!
                     </p>
-
-                    <p class="author">Beyonce (Alien Superstar)</p>
                 </div>
-                <button>refresh icon</button>
-                <button>share icon</button>
+
+                <p class="author">Beyonce (Alien Superstar)</p>
+                
+                <div class="btns">
+                    <button>refresh icon</button>
+                    <button>share icon</button>
+                </div>
+                
+                
             </div>
             
 
-            <hr class="bottomLine">
+            <span class="bottomLine"></span>
             <span class="rightLine"></span>
 
     </body>
