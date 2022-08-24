@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-image: url('Beige Brown Minimalist Quote Instagram Story (crop).png'); /*1*/
+    background-image: url('1.png'); /* 1 */
 
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -12,8 +12,8 @@ body {
     width: 100%;
 }
 
-/* LINES FOR BG 1 AND BG 5 */
-.topLine {
+/* LINES FOR BG 1 */
+#topLine {
     color: white;
     border-top: 2px solid;
     position: absolute;
@@ -21,7 +21,7 @@ body {
     top: 10%;
 }
 
-.bottomLine {
+#bottomLine {
     color: white;
     border-top: 2px solid;
     position: absolute;
@@ -29,7 +29,7 @@ body {
     bottom: 10%;
 }
 
-.leftLine {
+#leftLine {
     color: white;
     height: 100%;
     position: absolute;
@@ -37,7 +37,7 @@ body {
     left: 10%;
 }
 
-.rightLine {
+#rightLine {
     border-left: 2px solid;
     color: white;
     height: 100%; /* this doesnt work unless you make the position absolute */
@@ -47,7 +47,7 @@ body {
 
 /* CENTERING QUOTE TEXT TO THE MIDDLE OF THE PAGE */
 
-.quoteContainer { /* a div that is the child to the body element. its made to be the same size as the body element so that its child can be centered in the middle of it/the middle o the body without disrupting the lines in bg 1 and bg 5*/
+#quoteContainer { /* a div that is the child to the body element. its made to be the same size as the body element so that its child can be centered in the middle of it/the middle o the body without disrupting the lines in bg 1 and bg 5*/
     position: absolute; /* none of quote containers child elements will disrupt the elements in body (the lines) */
     height: 100%;
     width: 100%;
@@ -59,14 +59,15 @@ body {
     
 
 }
-.quoteTxt{
+#quoteTxt{
     position: relative; /* relative instead of absolute so that the h1, author, and button elements dont overlap when the screen is smaller */
     padding: 25px;
     width: 950px;
 }
 
+/* EDITING TEXT */
 
-.quote {
+#quote {
     font-family: 'Noto Serif Display', serif;
 
     /* any fonts you couldn't find, just make them arial */
@@ -87,7 +88,7 @@ h1 {
     padding: 25px;
 }
 
-.author {
+#author {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     text-align: center;
@@ -98,13 +99,15 @@ h1 {
     font-size: 20px;
 }
 
-.btns {
+/* EDITING BUTTONS AND ICONS */
+
+#btns {
     position: relative;
     display: flex;
     padding: 25px;
 }
 
-.refreshbtn {
+#refreshbtn {
     margin-right: 5px;
     background-color: transparent;
     height: 35px;
@@ -112,7 +115,7 @@ h1 {
     border-color: transparent;
 }
 
-.savebtn {
+#savebtn {
     margin-left: 5px;
     background-color: transparent;
     height: 35px;
@@ -120,7 +123,7 @@ h1 {
     border: transparent;
 }
 
-.material-symbols-outlined {
+.material-symbols-outlined { /* this is for editing the refresh and share google icons */
   font-variation-settings:
   'FILL' 35,
   'wght' 400,
@@ -132,72 +135,18 @@ h1 {
     color: white;
     height: 15px;
     width: 15px;
-  font-variation-settings:
-  'FILL' 35,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+    'FILL' 35,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
 
-.quoationMarks {
+#quoationMark {
     height: 125px;
     width: 125px;
     
-
     position: absolute;
     top: 13%;
     left: 15%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* background-image: url('pexels-pixabay-267151.jpg'); Photo by Pixabay: https://www.pexels.com/photo/sun-rays-through-the-clouds-267151/ */ /*6*/
-    /* background-color: #eee8db; */ /*5*/
-    /* background-image: url('Peach Watercolour Painting Motivational Quote Instagram Story.png'); */ /*2*/
-    /* background-image: url('3.png'); */
-    /* background-image: url('4.png');  */
-
-
-
-
-    /* font-family: 'Cardo', serif; */
-    /* background 3's author font */
-    /* font-family: 'Lato', sans-serif;  */
-    /* background 1's author font */
-    /* font-family: 'Fraunces', serif; */
-    /* background 2's quote font - Thin */
-    /* background 1's quote font - Light */
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'Playfair Display', serif; */
-    /* background 6's quote font */
-    /* font-family: 'Cormorant Garamond', serif; */
-    /* background 4's quote and author font - Italic ofr quote, Just bold for author */
-    /* font-family: 'Tangerine', cursive; */
-    /* i forgot */
-
-
-
-
-
-
-
