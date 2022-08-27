@@ -3,13 +3,13 @@
     <head>
         <title>Inspirational Quotes</title>
         <meta charset="utf-8">
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 
         <!-- GOOGLE FONTS LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:ital@1&family=Fraunces:ital,opsz,wght@0,9..144,100;1,9..144,100&family=Lato&family=Noto+Serif+Display:ital@1&family=Open+Sans&family=Playfair+Display&family=Tangerine&display=swap" rel="stylesheet">
-   
+        <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Charm&family=Cormorant+Garamond:ital@1&family=Fraunces:ital,opsz,wght@0,9..144,100;1,9..144,100&family=Lato&family=Lobster+Two&family=Noto+Serif+Display:ital@1&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet"> 
+        
         <!-- REFRESH GOOGLE ICON LINK -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <!-- SHARE GOOGLE ICON LINK -->
@@ -18,47 +18,39 @@
 
     <body>
 
-            <span id="leftLine"></span>
-            <span id="topLine"></span>
+            <span class = "spanLines" id="topLine"></span>
+            <span class = "spanLines" id="bottomLine"></span>
+            <span  class = "spanLines" id="leftLine"></span>            
+            <span class = "spanLines" id="rightLine"></span>
 
-            <!--CONSIDER REMOVING QUOTATION MARKS-->
-            <img id="quoationMark" src="icons8-quote-left-96.png" alt="quotation marks icon">
-            <!-- <a target="_blank" href="https://icons8.com/icon/nSiiTdPeCcG1/quote-left">Quote Left</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
             <div id="quoteContainer">
-                <h1 id="pageTitle">MOTIVATIONAL QUOTES</h1>
-                <div id="quoteTxt">
-                    <p id="quote">
-                        "I'm one of one
-                        I'm number one
-                        I'm the only one
-                        Don't even waste your time trying to compete with me (don't do it)
-                        No one else in this world can think like me (true)
-                        I'm twisted (twisted)
-                        I'll contradict it, keep him addicted
-                        Lies on his lips, I lick it
-                        UNIQUE!""
-                    </p>
-                </div>
+                <div id="quoteBg">
+                    <h1 id="pageTitle">MOTIVATIONAL QUOTES</h1>
+                    <div id="quoteTxt">
+                        <p id="quote">
+                            "When you put love out in the world it travels, 
+                            and it can touch people and reach people in ways that we never even expected."
+                        </p>
+                    </div>
 
-                <p id="author">- Beyonce (Alien Superstar)</p>
+                <p id="author">- Laverne Cox</p>
                 
                 <div id="btns">
                     <button id="refreshbtn"><span class="material-symbols-outlined">
                         refresh
                         </span></button>
-                    <button id="savebtn"><span class="material-symbols-outlined">
+                    <a id="savebtn" href='mailto:?subject=Check Out This Motivational Quote By Laverne Cox!&body="When you put love out in the world it travels, and it can touch people and reach people in ways that we never even expected."'><span class="material-symbols-outlined">
                         share
-                        </span></button>
+                        </span></a>
                 </div>
-                
+                </div>
             </div>
             
 
-            <span id="bottomLine"></span>
-            <span id="rightLine"></span>
+
 
     </body>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 
 </html>
