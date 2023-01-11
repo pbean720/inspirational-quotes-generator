@@ -17,12 +17,13 @@
     </head>
 
     <body>
-
+            <!-- THE BORDER LINES ON THE TOP, BOTTOM, AND SIDES OF BACKGROUNDS 1 AND 3  -->
             <span class = "spanLines" id="topLine"></span>
             <span class = "spanLines" id="bottomLine"></span>
             <span  class = "spanLines" id="leftLine"></span>            
             <span class = "spanLines" id="rightLine"></span>
 
+            <!-- THE QUOTE AND PAGE HEADER -->
             <div id="quoteContainer">
                 <div id="quoteBg">
                     <h1 id="pageTitle">MOTIVATIONAL QUOTES</h1>
@@ -33,12 +34,16 @@
                         </p>
                     </div>
 
+                <!-- THE AUTHOR -->
                 <p id="author">- Laverne Cox</p>
                 
+                <!-- THE REFRESH AND SHARE BUTTONS -->
                 <div id="btns">
+                    <!-- cwhen clicked, the refresh btn changes the style elemets and the quote and author text on the page everytime it is clicked -->
                     <button id="refreshbtn"><span class="material-symbols-outlined">
                         refresh
                         </span></button>
+                        <!-- when clicked, the share btn allows the user to share the current quote on the screen via email -->
                     <a id="savebtn" href='mailto:?subject=Check Out This Motivational Quote By Laverne Cox!&body="When you put love out in the world it travels, and it can touch people and reach people in ways that we never even expected."'><span class="material-symbols-outlined">
                         share
                         </span></a>
