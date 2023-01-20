@@ -175,13 +175,26 @@ function btnColor(bgIndex) {
 }
 
 // FETCHES THE INSPIRATIONAL QUOTES API AND DISPLAYS THE QUOTE AND ITS AUTHOR ON THE PAGE
-function fetchQuote() {
-    fetch("https://api.quotable.io/random")
-        .then(function (response){
-            response.json().then(function (data) {
-            quote.innerHTML = '"' + data.content + '"'
-            author.innerHTML = "- " + data.author
-            savebtn.href = 'mailto:?subject=Check Out This Motivational Quote by ' + data.author + '!&body="' + data.content + '"'
+// function fetchQuote() {
+//     fetch("https://api.quotable.io/random")
+//         .then(function (response){
+//             response.json().then(function (data) {
+//             quote.innerHTML = '"' + data.content + '"'
+//             author.innerHTML = "- " + data.author
+//             savebtn.href = 'mailto:?subject=Check Out This Motivational Quote by ' + data.author + '!&body="' + data.content + '"'
 
-        })
-})}
+//         })
+// })}
+async function fetchQuote() {
+            const response = await 
+    fetch("https://api.quotable.io/random");
+    const data = await response.json();
+    if (response.ok) {
+      // Update DOM elements
+      quote.innerHTML = '"' + data.content + '"';
+      author.innerHTML = "- " + data.author;
+    } else {
+      quote.innerHTML = "An error occured";
+      console.log(data);
+    }
+  }
