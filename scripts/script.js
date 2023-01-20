@@ -176,7 +176,7 @@ function btnColor(bgIndex) {
 
 // FETCHES THE INSPIRATIONAL QUOTES API AND DISPLAYS THE QUOTE AND ITS AUTHOR ON THE PAGE
 function fetchQuote() {
-    fetch("https://quotable.io/random")
+    fetch("https://api.quotable.io/random")
         .then(function (response){
             response.json().then(function (data) {
             quote.innerHTML = '"' + data.content + '"'
